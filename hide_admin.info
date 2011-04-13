@@ -1,0 +1,4 @@
+;$Id$
+name = Hide Admin
+description = "Prevents other users from editin admin account"
+core = 6.x

@@ -1,0 +1,13 @@
+<?php
+// $Id$
+
+/**
+* implementation of hook_user
+*/
+
+function hide_admin_user($op, &$edit, &$account, $category = NULL){
+	global $user;	
+	if($account->uid == 1 && $user->uid != 1) {	
+	$account = user_load(0);
+	}	
+}
